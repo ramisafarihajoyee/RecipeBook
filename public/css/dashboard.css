@@ -1,0 +1,78 @@
+input.searchBarInputMain, input.searchBarInputMain:hover, input.searchBarInputMain:active, 
+input.searchBarInputMain:focus, input.searchBarInputMain:visited {
+    background: #f2f2f2;
+    padding: 0 50px 0 220px;
+    height: 35px;
+    color: #666;
+    outline: 0;
+    border: 20;
+    width: 50%;
+    border: 1px solid #ddd;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+* {box-sizing: border-box;}
+
+body {
+  margin: 0; 
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 
+  Geneva, Verdana, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color:  #333;
+  ;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(41, 39, 39);
+}
+
+.topnav a.active {
+  background-color: #807fbb;
+  color: white;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 8px;
+  margin-top: 8px;
+  margin-right: 30px;
+  border: none;
+  font-size: 17px;
+  width: 40%;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;  
+  }
+}
+
+
+
+/* template */
+
+
