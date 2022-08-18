@@ -29,18 +29,12 @@ class AddrecipeController extends Controller
         $description = $request->input('description');
 
 
-        //------- handle the image upload
-        //get the file name
-        //this is the $request file we got from the POST
+
         $fullFilename = $request->file('image')->getClientOriginalName();
-        //get the just the name
         $filename = pathinfo($fullFilename, PATHINFO_FILENAME);
-        //get the extension
         $fileExt = $request->file('image')->getClientOriginalExtension();
-        //----  get the file ready to be stored
         $renamedFile =  $filename . "_" . time() . "." . $fileExt;
         $path = $request->file('image')->storeAs("public/covers", $renamedFile);
-        ///////////////////////////////
 
 
         // if ($request->file('image') == null) {
