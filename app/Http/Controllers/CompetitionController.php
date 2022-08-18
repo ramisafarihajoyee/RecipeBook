@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Competition;
+use App\Models\User;
 
 class CompetitionController extends Controller
 {
@@ -12,12 +13,13 @@ class CompetitionController extends Controller
         return view('competition/form');
     }
 
-    // function available(){
-    //     $list_fetch = Competition::where('position', '!=', '')
-    //                     ->orderBy('competition_year', 'desc')
-    //                     ->orderBy('position')->get();
-    //     return view('competition/available_competition', ['list' => $list_fetch]);
-    // }
+    function profileshow($email){
+        $list_fetch = User::where('email', $email)
+                    ->get();
+        $winner = Competition::where('email', $email)
+                    ->get();
+        return view('competition/profileshow', ['list' => $list_fetch, 'winner' => $winner]);
+    }
 
     function result(){
         $sessiondata = session('email');  

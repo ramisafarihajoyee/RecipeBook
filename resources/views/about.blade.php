@@ -31,7 +31,7 @@
     
     <div class="w3-padding-32">
 
-      <h4><b>Food is what you satiate truly!</b></h4>
+      <h4><b>Food is what can satiate you truly!</b></h4>
       <h6><i>With Passion For Real, Good Food</i></h6><br>
       <h>Art of Food is a food website. To upload and watch new recipes on this website, please register and 
         support the website. </br>

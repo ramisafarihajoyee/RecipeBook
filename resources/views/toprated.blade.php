@@ -53,7 +53,7 @@ rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5
 @endforeach
 
 
-<div class="bottomright"><a href="{{ url('/') }}">Back to Main Page</a></div>
+<div class="bottomright"><a href="{{ url('/dashboard') }}">Back to Home</a></div>
 
 </body>
 </html>

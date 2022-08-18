@@ -31,10 +31,6 @@ tr:nth-child(even) {
 
 <h2 style="text-align:center">Competition Result</h2>
 
-<!-- @foreach($result_list as $r)
-    <h>{{ $r['name'] }}</h>
-    <h>{{ $r['position'] }}</h>
-@endforeach -->
 
 <table>
 <tr>
@@ -43,6 +39,7 @@ tr:nth-child(even) {
     <th>Year</th>
     <th>Place</th>
     <th>Position</th>
+    <th>Profile</th>
   </tr>
 @foreach($result_list as $r)
   <tr>
@@ -51,6 +48,11 @@ tr:nth-child(even) {
     <td>{{ $r['competition_year'] }}</td>
     <td>{{ $r['competition_place'] }}</td>
     <td>{{ $r['position'] }}</td>
+    <td>
+    <a href="{{ url('competition/profileshow', $r['email']) }}">
+      <button type="submit" class="btn btn-primary" name="submit">Profile</button>
+    </a>  
+  </td>
   </tr>
 @endforeach
 </table>

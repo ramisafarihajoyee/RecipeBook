@@ -98,5 +98,6 @@ Route::get('toprated.show', [DashboardController::class, 'toprated']);
 Route::get('competition/form', [CompetitionController::class, 'show']);
 Route::post('competition/competition.register', [CompetitionController::class, 'store']);
 Route::get('competition/result', [CompetitionController::class, 'result']);
-// Route::get('competition/available_competition', [CompetitionController::class, 'available']);
+Route::get('competition/profileshow/{email?}', [CompetitionController::class, 'profileshow']);
+
 ?>
